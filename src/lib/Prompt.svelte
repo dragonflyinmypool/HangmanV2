@@ -1,1 +1,7 @@
-<h3>Catagory</h3>
+<h3><slot /></h3>
+
+<style>
+  h3 {
+    text-align: center;
+  }
+</style>
