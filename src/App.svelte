@@ -6,19 +6,32 @@
   import KeyboardL from "./lib/KeyboardL.svelte";
 
   let catagories = ["US History", "US Presidents", "Famous landmarks"];
+  let word = "LINCOLN";
+  let wordSplit = word.split("");
+
+  // Keyboard
+  let allLetters = [...Array(26)].map((_, i) =>
+    String.fromCharCode(i + 97).toUpperCase()
+  );
+  let pickedLetters = [];
 </script>
 
-<main>
-  <Prompt>{catagories[0]}</Prompt>
-  <HangmanAnimation />
-  <WordDisplay />
-  <KeyboardL />
-  <Menu />
-</main>
+<div>
+  <main>
+    <Prompt>{catagories[0]}</Prompt>
+    <HangmanAnimation />
+    <WordDisplay {wordSplit} />
+    <KeyboardL {allLetters} {pickedLetters} />
+    <Menu />
+  </main>
+</div>
 
 <style>
   main {
+    width: 95%;
     display: grid;
     justify-content: center;
+    align-items: center;
+    grid-template-rows: 20px 200px 150px 250px;
   }
 </style>
