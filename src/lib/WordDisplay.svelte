@@ -1,10 +1,17 @@
 <script>
-  export let wordSplit = "";
+  export let eachWordSplit = [];
+  for (let index = 0; index < eachWordSplit.length; index++) {
+    const element = eachWordSplit[index];
+  }
 </script>
 
-<div class="line">
-  {#each wordSplit as letter}
-    <div class="letter">{letter}</div>
+<div id="container">
+  {#each eachWordSplit as word, i}
+    <div class="line">
+      {#each eachWordSplit[i] as letter}
+        <div class="letter">{letter}</div>
+      {/each}
+    </div>
   {/each}
 </div>
 
@@ -14,14 +21,14 @@
     align-content: center;
     justify-content: center;
     box-shadow: none;
+    margin-bottom: 7px;
   }
   .letter {
-    border: solid 2px white;
-    width: 30px;
-    height: 35px;
-    font-size: 30px;
+    width: 23px;
+    height: 30px;
+    font-size: 20px;
+    line-height: 30px;
     text-align: center;
-    background-color: blueviolet;
-    color: white;
+    font-weight: bold;
   }
 </style>

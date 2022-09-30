@@ -1,4 +1,11 @@
+/* Colors */
+
 body {
-    background-color: lightblue;
-    margin: 10px 20px;
+    background-color: rgb(194, 178, 99);
+}
+
+.letter {
+    background-color: rgb(185, 99, 194);
+    color: white;
+    border: dotted 1.5px white;
 }

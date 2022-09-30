@@ -1,7 +1,7 @@
-<h3><slot /></h3>
+<div><slot /></div>
 
 <style>
-  h3 {
+  div {
     text-align: center;
   }
 </style>

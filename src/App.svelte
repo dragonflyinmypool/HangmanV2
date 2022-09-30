@@ -3,35 +3,45 @@
   import WordDisplay from "./lib/WordDisplay.svelte";
   import Menu from "./lib/Menu.svelte";
   import HangmanAnimation from "./lib/HangmanAnimation.svelte";
-  import KeyboardL from "./lib/KeyboardL.svelte";
+  import Keyboard2 from "./lib/Keyboard2.svelte";
 
+  // Content data
   let catagories = ["US History", "US Presidents", "Famous landmarks"];
-  let word = "LINCOLN";
-  let wordSplit = word.split("");
+  let word = "ABRAHAM LINCOLN";
 
+  // Proccess the word
+  let splitByWord = word.split(" ");
+  let eachWordSplit = splitByWord.map(function (element) {
+    return element.split("");
+  });
+
+  let wordSplit = ["a", "b"];
   // Keyboard
   let allLetters = [...Array(26)].map((_, i) =>
     String.fromCharCode(i + 97).toUpperCase()
   );
+
   let pickedLetters = [];
+
+  function letterClick(e) {
+    pickedLetters.push(e.detail);
+    allLetters = allLetters;
+  }
 </script>
 
-<div>
-  <main>
-    <Prompt>{catagories[0]}</Prompt>
-    <HangmanAnimation />
-    <WordDisplay {wordSplit} />
-    <KeyboardL {allLetters} {pickedLetters} />
-    <Menu />
-  </main>
-</div>
+<main>
+  <Prompt>{catagories[0]}</Prompt>
+  <HangmanAnimation />
+  <WordDisplay {eachWordSplit} />
+  <Keyboard2 {allLetters} {pickedLetters} on:letterClick={letterClick} />
+  <Menu />
+</main>
 
 <style>
   main {
-    width: 95%;
     display: grid;
     justify-content: center;
     align-items: center;
-    grid-template-rows: 20px 200px 150px 250px;
+    row-gap: 15px;
   }
 </style>
