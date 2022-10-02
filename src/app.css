@@ -1,5 +1,10 @@
 /* Colors */
 
+body,
+button {
+    color: darkorchid
+}
+
 body {
     background-color: rgb(194, 178, 99);
 }
@@ -8,4 +13,24 @@ body {
     background-color: rgb(185, 99, 194);
     color: white;
     border: dotted 1.5px white;
+}
+
+.livesContainer {
+    color: rgb(185 99 194);
+}
+
+.unpicked {
+    color: rgb(185, 99, 194, .2);
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff29;
+}
+
+select,
+option {
+    background-color: #ffffff29;
+    color: darkorchid
 }

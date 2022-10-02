@@ -4,37 +4,100 @@
   import Menu from "./lib/Menu.svelte";
   import HangmanAnimation from "./lib/HangmanAnimation.svelte";
   import Keyboard2 from "./lib/Keyboard2.svelte";
+  import item from "./assets/wordList.json";
+
+  // GAME SETUP
+
+  // Current settings
+  let settings = {
+    lives: ["1", "2", "3", "4", "5", "6", "7"],
+    totalLives: "5",
+    catagories: ["Animals", "US History", "Famous Landmarks"],
+    currentCatagory: "US History",
+  };
 
   // Content data
-  let catagories = ["US History", "US Presidents", "Famous landmarks"];
-  let word = "ABRAHAM LINCOLN";
+  let words;
+  let curentTopic;
+  let word;
 
-  // Proccess the word
-  let splitByWord = word.split(" ");
-  let eachWordSplit = splitByWord.map(function (element) {
-    return element.split("");
-  });
-
-  let wordSplit = ["a", "b"];
-  // Keyboard
-  let allLetters = [...Array(26)].map((_, i) =>
-    String.fromCharCode(i + 97).toUpperCase()
-  );
-
+  // Status
+  // possible statuses: play, lost, won
+  let status;
+  // Game variables
   let pickedLetters = [];
+  let splitByWord;
+  let eachWordSplit;
+  let allLetters;
+  let livesLeft;
 
+  function newGame() {
+    status = "play";
+    livesLeft = Number(settings.totalLives);
+    pickedLetters = [];
+
+    curentTopic = settings.currentCatagory;
+    settings = settings;
+
+    // Pick the word
+    words = item.words;
+    let currentWordList = words[curentTopic];
+    console.log(currentWordList);
+    word = currentWordList[Math.floor(Math.random() * currentWordList.length)];
+
+    word = word.toUpperCase();
+
+    // Proccess the word
+    splitByWord = word.split(" ");
+    eachWordSplit = splitByWord.map((element) => element.split(""));
+
+    // Keyboard
+    allLetters = [...Array(26)].map((_, i) =>
+      String.fromCharCode(i + 97).toUpperCase()
+    );
+  }
+  newGame();
+
+  // GAME PLAY
+  // Handle letter click
   function letterClick(e) {
+    // Update letter list
     pickedLetters.push(e.detail);
     allLetters = allLetters;
+    eachWordSplit = eachWordSplit;
+
+    // Update lives
+    let theLettersSplit = word.split("");
+    livesLeft = theLettersSplit.includes(e.detail) ? livesLeft : livesLeft - 1;
+
+    // Check for game over
+    if (livesLeft < 1) {
+      status = "lost";
+    }
+
+    // // Check for win
+    let lettersWithoutSpaces = word.replace(" ", "").replace(" ", "").split("");
+    let checker = (arr, target) => target.every((v) => arr.includes(v));
+    if (checker(pickedLetters, lettersWithoutSpaces)) {
+      status = "won";
+    }
   }
 </script>
 
 <main>
-  <Prompt>{catagories[0]}</Prompt>
-  <HangmanAnimation />
-  <WordDisplay {eachWordSplit} />
-  <Keyboard2 {allLetters} {pickedLetters} on:letterClick={letterClick} />
-  <Menu />
+  <div id="header">
+    <HangmanAnimation {livesLeft} {status} />
+    <Prompt>{settings.currentCatagory}</Prompt>
+  </div>
+
+  <WordDisplay {eachWordSplit} {pickedLetters} {status} />
+  <Keyboard2
+    {allLetters}
+    {pickedLetters}
+    {status}
+    on:letterClick={letterClick}
+  />
+  <Menu on:newGame={newGame} {settings} />
 </main>
 
 <style>
@@ -43,5 +106,9 @@
     justify-content: center;
     align-items: center;
     row-gap: 15px;
+  }
+  #header {
+    display: flex;
+    justify-content: space-between;
   }
 </style>

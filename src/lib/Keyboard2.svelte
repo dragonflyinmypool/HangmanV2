@@ -1,13 +1,16 @@
 <script>
   export let allLetters;
   export let pickedLetters;
+  export let status;
 
   import { createEventDispatcher } from "svelte";
   const dispatch = createEventDispatcher();
 
   function disableKeys(letter) {
-    // allLetters = allLetters;
-    return pickedLetters.includes(letter) ? true : false;
+    if (status == "lost" || status == "won") {
+      return true;
+    }
+    return pickedLetters.includes(letter);
   }
 </script>
 
@@ -16,6 +19,7 @@
     <button
       disabled={disableKeys(letter)}
       class="kLetter"
+      class:unpicked={disableKeys(letter)}
       on:click={() => {
         dispatch("letterClick", letter);
       }}
@@ -32,11 +36,19 @@
     gap: 10px;
     justify-content: center;
   }
-
   .kLetter {
     width: 40px;
     height: 40px;
     text-align: center;
     line-height: 40px;
+    font-weight: bold;
+    font-size: 30px;
+  }
+  .unpicked {
+    font-weight: 100;
+  }
+  button {
+    border: none;
+    border-radius: 20%;
   }
 </style>
