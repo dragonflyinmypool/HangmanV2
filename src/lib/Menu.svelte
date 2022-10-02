@@ -22,13 +22,13 @@
 </script>
 
 <div id="container">
-  <button>Hint</button>
+  <button on:click={newGame}>New Game</button>
   <SelectButton
     options={settings.catagories}
     currentOption={settings.currentCatagory}
     on:change={changeCatagory}
   />
-  <button on:click={newGame}>New Game</button>
+  <span />
   <SelectButton
     options={settings.lives}
     currentOption={settings.totalLives}

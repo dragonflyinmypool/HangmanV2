@@ -12,8 +12,8 @@
   let settings = {
     lives: ["1", "2", "3", "4", "5", "6", "7"],
     totalLives: "5",
-    catagories: ["Animals", "US History", "Famous Landmarks"],
-    currentCatagory: "US History",
+    catagories: ["Animals", "Dog Breeds", "Insects"],
+    currentCatagory: "Dog Breeds",
   };
 
   // Content data
@@ -42,9 +42,7 @@
     // Pick the word
     words = item.words;
     let currentWordList = words[curentTopic];
-    console.log(currentWordList);
     word = currentWordList[Math.floor(Math.random() * currentWordList.length)];
-
     word = word.toUpperCase();
 
     // Proccess the word

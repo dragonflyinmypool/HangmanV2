@@ -1,8 +1,6 @@
 <script>
   export let options;
   export let currentOption;
-
-  console.log(options);
 </script>
 
 <div>
