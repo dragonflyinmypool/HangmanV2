@@ -15,10 +15,13 @@
 </div>
 
 <style>
+  div {
+    font-size: 40px;
+  }
   select {
     border: none;
     border-radius: 5px;
-    font-size: 17px;
+    font-size: 40px;
     padding: 0.5px;
     min-width: 100px;
   }

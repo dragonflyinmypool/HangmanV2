@@ -31,18 +31,19 @@
 
 <style>
   .keyboard {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
+    max-width: 830px;
+    display: grid;
+    grid-template-columns: repeat(9, 70px);
+    gap: 20px;
+    grid-area: keyboard;
   }
   .kLetter {
-    width: 40px;
-    height: 40px;
+    width: 70px;
+    height: 70px;
     text-align: center;
-    line-height: 40px;
+    line-height: 70px;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 60px;
   }
   .unpicked {
     font-weight: 100;

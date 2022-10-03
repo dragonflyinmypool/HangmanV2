@@ -39,15 +39,13 @@
 <style>
   #container {
     min-height: 100px;
-    display: grid;
+    display: flex;
     gap: 18px;
     align-items: center;
     align-content: center;
     justify-content: center;
-    grid-template-columns: 100px 150px;
-    padding: 20px;
   }
   button {
-    font-size: 17px;
+    font-size: 40px;
   }
 </style>

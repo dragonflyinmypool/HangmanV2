@@ -83,30 +83,32 @@
 </script>
 
 <main>
-  <div id="header">
-    <HangmanAnimation {livesLeft} {status} />
-    <Prompt>{settings.currentCatagory}</Prompt>
-  </div>
-
   <WordDisplay {eachWordSplit} {pickedLetters} {status} />
-  <Keyboard2
-    {allLetters}
-    {pickedLetters}
-    {status}
-    on:letterClick={letterClick}
-  />
+  <div class="flex">
+    <Keyboard2
+      {allLetters}
+      {pickedLetters}
+      {status}
+      on:letterClick={letterClick}
+    />
+    <HangmanAnimation {livesLeft} {status} />
+  </div>
   <Menu on:newGame={newGame} {settings} />
 </main>
 
 <style>
   main {
+    width: 1900px;
     display: grid;
     justify-content: center;
     align-items: center;
-    row-gap: 15px;
+    grid-template-rows: 500px 280px;
+    row-gap: 30px;
   }
-  #header {
-    display: flex;
-    justify-content: space-between;
+  .flex {
+    width: 1700px;
+    display: grid;
+    grid-template-columns: 300px 1000px 300px;
+    grid-template-areas: ". keyboard hangman";
   }
 </style>

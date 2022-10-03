@@ -36,10 +36,10 @@
     margin-bottom: 7px;
   }
   .letter {
-    width: 23px;
-    height: 30px;
-    font-size: 20px;
-    line-height: 30px;
+    width: 120px;
+    height: 120px;
+    font-size: 110px;
+    line-height: 120px;
     text-align: center;
     font-weight: bold;
   }
