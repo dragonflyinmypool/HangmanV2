@@ -17,6 +17,6 @@
 
 <style>
   .livesContainer {
-    font-size: 25px;
+    font-size: 80px;
   }
 </style>
