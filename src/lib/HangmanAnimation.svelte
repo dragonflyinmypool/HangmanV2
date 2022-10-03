@@ -18,5 +18,6 @@
 <style>
   .livesContainer {
     font-size: 80px;
+    grid-area: hangman;
   }
 </style>
