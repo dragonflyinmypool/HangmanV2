@@ -22,7 +22,7 @@
     color: var(--yellow);
   }
   #hearts {
-    font-size: 130px;
+    font-size: 80px;
     color: var(--purple);
   }
 </style>

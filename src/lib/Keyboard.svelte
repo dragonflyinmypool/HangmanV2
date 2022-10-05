@@ -1,6 +1,6 @@
 <script>
   // Import dependencies
-  import { onMount, afterUpdate } from 'svelte';
+  import { onMount, afterUpdate } from "svelte";
 
   import { createEventDispatcher } from "svelte";
 
@@ -8,23 +8,21 @@
   export let status;
   export let allLetters;
   export let nextLetter;
-  
+
   const dispatch = createEventDispatcher();
 
-  let keyboard
+  let keyboard;
   let keyboardChildren;
 
-  
-  $:{
-    pickedLetters = pickedLetters
-    allLetters = allLetters
+  $: {
+    pickedLetters = pickedLetters;
+    allLetters = allLetters;
   }
 
-
   afterUpdate(() => {
-    let keyboardChildren = keyboard.childNodes
+    let keyboardChildren = keyboard.childNodes;
     if (pickedLetters.length > 0) {
-      keyboardChildren[nextLetter].focus()
+      keyboardChildren[nextLetter].focus();
     }
   });
 
@@ -37,24 +35,28 @@
 
   // Focus
   onMount(() => {
-    keyboard.firstChild.focus()
+    keyboard.firstChild.focus();
   });
 
-  function keyClick(letter, id) {
-    dispatch('letterClick',{
-      letter:letter,
-      id:id
-    })
+  function keyClick(e) {
+    let id = e.target.id;
+    let letter = e.target.innerText;
+
+    dispatch("letterClick", {
+      letter: letter,
+      id: id,
+    });
   }
 </script>
 
 <div class="keyboard" bind:this={keyboard}>
   {#each allLetters as letter, id}
     <button
+      id={id.toString()}
       disabled={disableKeys(letter)}
       class="kLetter"
       class:unpicked={disableKeys(letter)}
-      on:click={keyClick(letter, id)}
+      on:click={keyClick}
     >
       {letter}
     </button>
