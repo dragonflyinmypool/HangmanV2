@@ -2,6 +2,7 @@
   import { createEventDispatcher } from "svelte";
   import SelectButton from "./SelectButton.svelte";
   export let settings;
+  export let newGameButton;
 
   let dispatch = createEventDispatcher();
 
@@ -22,7 +23,7 @@
 </script>
 
 <div id="container">
-  <button on:click={newGame}>New Game</button>
+  <button on:click={newGame} bind:this={newGameButton}>New Game</button>
   <SelectButton
     options={settings.catagories}
     currentOption={settings.currentCatagory}
