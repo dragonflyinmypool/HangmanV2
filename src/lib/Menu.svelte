@@ -43,9 +43,14 @@
     gap: 18px;
     align-items: center;
     align-content: center;
-    justify-content: center;
+    justify-content: left;
+    color: var(--purple);
+    font-weight: bold;
   }
   button {
     font-size: 40px;
+    background-color: var(--purple);
+    color: var(--lightBlue);
+    border: none;
   }
 </style>

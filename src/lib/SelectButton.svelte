@@ -24,6 +24,9 @@
     font-size: 40px;
     padding: 0.5px;
     min-width: 100px;
+    background-color: var(--purple);
+    color: var(--lightBlue);
+    text-align: center;
   }
   option {
     background-color: #ffffff29;

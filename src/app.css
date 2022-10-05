@@ -1,36 +1,17 @@
 /* Colors */
-
-body,
-button {
-    color: darkorchid
+:root {
+    --lightBlue: rgb(140, 159, 205);
+    --purple: #8e55a3;
+    --yellow: #ffdd6d;
 }
 
 body {
-    background-color: rgb(194, 178, 99);
+    background-color: var(--lightBlue);
 }
 
-.letter {
-    background-color: rgb(185, 99, 194);
-    color: white;
-    border: dotted 1.5px white;
-}
-
-.livesContainer {
-    color: rgb(185 99 194);
-}
-
-.unpicked {
-    color: rgb(185, 99, 194, .2);
-}
-
-button {
-    border: none;
-    border-radius: 5px;
-    background-color: #ffffff29;
-}
-
-select,
-option {
-    background-color: #ffffff29;
-    color: darkorchid
+button:focus,
+select:focus {
+    background-color: var(--lightBlue);
+    color: var(purple);
+    outline: 7px solid var(--yellow);
 }

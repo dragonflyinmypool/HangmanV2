@@ -1,18 +1,13 @@
 <script>
-  export let eachWordSplit = [];
+  export let word = [];
   export let pickedLetters;
   export let status;
-
-  // Set up display
-  for (let index = 0; index < eachWordSplit.length; index++) {
-    const element = eachWordSplit[index];
-  }
 </script>
 
 <div id="container">
-  {#each eachWordSplit as word, i}
+  {#each word as currentWord, i}
     <div class="line">
-      {#each eachWordSplit[i] as letter}
+      {#each currentWord as letter}
         <div class="letter">
           {pickedLetters.includes(letter) || status == "lost" ? letter : ""}
         </div>
@@ -25,13 +20,14 @@
   #container {
     min-height: 120px;
     display: grid;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
   }
   .line {
     display: flex;
+    flex-wrap: wrap;
     align-content: center;
-    justify-content: center;
+    justify-content: left;
     box-shadow: none;
     margin-bottom: 7px;
   }
@@ -42,5 +38,8 @@
     line-height: 120px;
     text-align: center;
     font-weight: bold;
+    background-color: var(--purple);
+    border: var(--lightBlue) 2px solid;
+    color: var(--yellow);
   }
 </style>

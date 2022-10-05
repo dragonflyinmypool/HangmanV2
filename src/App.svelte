@@ -1,13 +1,12 @@
 <script>
-  import Prompt from "./lib/Prompt.svelte";
+  // Import components
   import WordDisplay from "./lib/WordDisplay.svelte";
   import Menu from "./lib/Menu.svelte";
-  import HangmanAnimation from "./lib/HangmanAnimation.svelte";
-  import Keyboard2 from "./lib/Keyboard2.svelte";
-  import item from "./assets/wordList.json";
+  import LivesDisplay from "./lib/LivesDisplay.svelte";
+  import Keyboard from "./lib/Keyboard.svelte";
+  import wordList from "./assets/wordList.json";
 
   // GAME SETUP
-
   // Current settings
   let settings = {
     lives: ["1", "2", "3", "4", "5", "6", "7"],
@@ -16,82 +15,91 @@
     currentCatagory: "Dog Breeds",
   };
 
-  // Content data
-  let words;
-  let curentTopic;
-  let word;
-
-  // Status
-  // possible statuses: play, lost, won
-  let status;
-  // Game variables
-  let pickedLetters = [];
-  let splitByWord;
-  let eachWordSplit;
-  let allLetters;
-  let livesLeft;
-
-  function newGame() {
-    status = "play";
-    livesLeft = Number(settings.totalLives);
-    pickedLetters = [];
-
-    curentTopic = settings.currentCatagory;
-    settings = settings;
-
-    // Pick the word
-    words = item.words;
-    let currentWordList = words[curentTopic];
-    word = currentWordList[Math.floor(Math.random() * currentWordList.length)];
-    word = word.toUpperCase();
-
-    // Proccess the word
-    splitByWord = word.split(" ");
-    eachWordSplit = splitByWord.map((element) => element.split(""));
-
-    // Keyboard
-    allLetters = [...Array(26)].map((_, i) =>
-      String.fromCharCode(i + 97).toUpperCase()
-    );
+  // State
+  let state = {
+    gameStage: 'play',
+    livesLeft:0,
+    word:[],
+    pickedLetters:[],
+    wordTogether:""
   }
+ 
+  function newGame() {
+    let livesLeft = Number(settings.totalLives)
+    // Pick the word, and format into arrays
+    let [word,wordTogether] = getRandomWord(settings.currentCatagory)
+    // Reset the game vaible/state
+
+
+    state = resetState(livesLeft, getRandomWord(settings.currentCatagory));
+  }
+  
+  function resetState(livesLeft, word, wordTogether){ 
+    console.log(livesLeft, word, wordTogether)
+    return {
+      // Possible statuses: play, lost, won
+      gameStage:'play',
+      livesLeft:livesLeft,
+      word:word,
+      wordTogether:wordTogether,
+      pickedLetters:[],
+    }
+  }
+
+  function getRandomWord(catagory) {
+    // Go to current catagory word list and get a random word
+    let currentWordList = wordList.words[catagory];
+    let word = currentWordList[Math.floor(Math.random() * currentWordList.length)]
+    let wordTogether = word.replace(/\s/g, '')
+
+    // Proccess the word (creates an array for each word, and an entry for each letter)
+    word = word.toUpperCase().split(" ").map((element) => element.split(""));
+
+    console.log(word, wordTogether)
+    return { word, wordTogether};
+  }
+
   newGame();
 
   // GAME PLAY
   // Handle letter click
   function letterClick(e) {
-    // Update letter list
-    pickedLetters.push(e.detail);
-    allLetters = allLetters;
-    eachWordSplit = eachWordSplit;
+    function checkPicked(letter) {
+      return !pickedLetters.includes(letter);
+    }
 
+    // Update letter lists
+    state.pickedLetters.push(e.detail);
+
+    console.log(state, state.livesLeft)
     // Update lives
-    let theLettersSplit = word.split("");
-    livesLeft = theLettersSplit.includes(e.detail) ? livesLeft : livesLeft - 1;
+    state.livesLeft = state.word.includes(e.detail) ? state.livesLeft : state.livesLeft - 1;
 
     // Check for game over
-    if (livesLeft < 1) {
+    if (state.livesLeft < 1) {
       status = "lost";
     }
 
-    // // Check for win
-    let lettersWithoutSpaces = word.replace(" ", "").replace(" ", "").split("");
-    let checker = (arr, target) => target.every((v) => arr.includes(v));
-    if (checker(pickedLetters, lettersWithoutSpaces)) {
-      status = "won";
-    }
+    // let currentWord = state.word
+    // console.log(state.word)
+
+    // // let lettersWithoutSpaces = currentWord.replace(/,/g,"");
+    // // console.log(state.word, lettersWithoutSpaces)
+
+    // // // let checker = (arr, target) => target.every((v) => arr.includes(v));
+
+    // // // if (checker(state.pickedLetters, lettersWithoutSpaces)) {
+    // // //   status = "won";
+    // // // }
+
   }
 </script>
 
 <main>
-  <WordDisplay {eachWordSplit} {pickedLetters} {status} />
+  <WordDisplay word={state.word} pickedLetters={state.pickedLetters} status={state.gameStage} />
   <div class="flex">
-    <Keyboard2
-      {allLetters}
-      {pickedLetters}
-      {status}
-      on:letterClick={letterClick}
-    />
-    <HangmanAnimation {livesLeft} {status} />
+    <Keyboard pickedLetters={state.pickedLetters} status={state.gameStage} on:letterClick={letterClick}/>
+    <LivesDisplay livesLeft={state.livesLeft} status={state.gameStage} />
   </div>
   <Menu on:newGame={newGame} {settings} />
 </main>
@@ -108,7 +116,7 @@
   .flex {
     width: 1700px;
     display: grid;
-    grid-template-columns: 300px 1000px 300px;
-    grid-template-areas: ". keyboard hangman";
+    grid-template-columns: 1000px 500px;
+    grid-template-areas: "keyboard hangman";
   }
 </style>

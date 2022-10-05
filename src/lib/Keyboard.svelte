@@ -1,7 +1,11 @@
 <script>
-  export let allLetters;
   export let pickedLetters;
   export let status;
+
+ const  allLetters = [...Array(26)].map((_, i) =>
+      String.fromCharCode(i + 97).toUpperCase()
+    );
+
 
   import { createEventDispatcher } from "svelte";
   const dispatch = createEventDispatcher();
@@ -44,12 +48,18 @@
     line-height: 70px;
     font-weight: bold;
     font-size: 60px;
+    background-color: var(--purple);
+    color: var(--lightBlue);
   }
   .unpicked {
     font-weight: 100;
+    color: var(--purple);
+    background-color: #8e55a334;
+    color: #8e55a331;
   }
   button {
     border: none;
     border-radius: 20%;
+    color: var(--red);
   }
 </style>

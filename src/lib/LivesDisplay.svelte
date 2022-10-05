@@ -6,7 +6,7 @@
 <div class="livesContainer">
   {#if status == "play"}
     {#each Array(livesLeft) as _, index (index)}
-      &#9829;
+      <span id="hearts">&#9829;</span>
     {/each}
   {:else if status == "lost"}
     You loose! 😬
@@ -17,7 +17,12 @@
 
 <style>
   .livesContainer {
-    font-size: 80px;
+    font-size: 100px;
     grid-area: hangman;
+    color: var(--yellow);
+  }
+  #hearts {
+    font-size: 130px;
+    color: var(--purple);
   }
 </style>
