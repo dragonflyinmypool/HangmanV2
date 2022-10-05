@@ -1,15 +1,19 @@
 <script>
+  import { createEventDispatcher } from "svelte";
+
   export let pickedLetters;
   export let status;
+  
+  const dispatch = createEventDispatcher();
 
- const  allLetters = [...Array(26)].map((_, i) =>
+  let  allLetters = [...Array(26)].map((_, i) =>
       String.fromCharCode(i + 97).toUpperCase()
     );
 
-
-  import { createEventDispatcher } from "svelte";
-  const dispatch = createEventDispatcher();
-
+  $:{
+    pickedLetters = pickedLetters
+    allLetters = allLetters
+  }
   function disableKeys(letter) {
     if (status == "lost" || status == "won") {
       return true;

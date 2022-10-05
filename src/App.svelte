@@ -25,17 +25,18 @@
   }
  
   function newGame() {
+
     let livesLeft = Number(settings.totalLives)
+    
     // Pick the word, and format into arrays
-    let [word,wordTogether] = getRandomWord(settings.currentCatagory)
+    let [word, wordTogether] = getRandomWord(settings.currentCatagory)
+
+    console.log(wordTogether)
     // Reset the game vaible/state
-
-
-    state = resetState(livesLeft, getRandomWord(settings.currentCatagory));
+    state = resetState(livesLeft, word, wordTogether);
   }
   
   function resetState(livesLeft, word, wordTogether){ 
-    console.log(livesLeft, word, wordTogether)
     return {
       // Possible statuses: play, lost, won
       gameStage:'play',
@@ -50,13 +51,12 @@
     // Go to current catagory word list and get a random word
     let currentWordList = wordList.words[catagory];
     let word = currentWordList[Math.floor(Math.random() * currentWordList.length)]
-    let wordTogether = word.replace(/\s/g, '')
+    let wordTogether = word.replace(/\s/g, '').toUpperCase()
 
     // Proccess the word (creates an array for each word, and an entry for each letter)
     word = word.toUpperCase().split(" ").map((element) => element.split(""));
 
-    console.log(word, wordTogether)
-    return { word, wordTogether};
+    return [word, wordTogether];
   }
 
   newGame();
@@ -64,34 +64,30 @@
   // GAME PLAY
   // Handle letter click
   function letterClick(e) {
-    function checkPicked(letter) {
-      return !pickedLetters.includes(letter);
-    }
-
     // Update letter lists
     state.pickedLetters.push(e.detail);
+    state.pickedLetters = state.pickedLetters
 
-    console.log(state, state.livesLeft)
-    // Update lives
-    state.livesLeft = state.word.includes(e.detail) ? state.livesLeft : state.livesLeft - 1;
+    updateLives (e)
+  }
+
+  function updateLives (e) { 
+    // Update lives 
+    state.livesLeft = state.wordTogether.includes(e.detail) ? state.livesLeft : state.livesLeft - 1;
 
     // Check for game over
     if (state.livesLeft < 1) {
-      status = "lost";
+     state.gameStage = "lost";
+      console.log("lost")
     }
 
-    // let currentWord = state.word
-    // console.log(state.word)
+    // Check if game has been won
+    let checker = (arr, target) => target.every((v) => arr.includes(v));
 
-    // // let lettersWithoutSpaces = currentWord.replace(/,/g,"");
-    // // console.log(state.word, lettersWithoutSpaces)
-
-    // // // let checker = (arr, target) => target.every((v) => arr.includes(v));
-
-    // // // if (checker(state.pickedLetters, lettersWithoutSpaces)) {
-    // // //   status = "won";
-    // // // }
-
+    if (checker(state.pickedLetters,state.wordTogether.split(""))) {
+      console.log("You won")
+      state.gameStage = "won";
+    }
   }
 </script>
 
