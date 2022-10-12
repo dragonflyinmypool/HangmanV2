@@ -11,7 +11,17 @@
   let settings = {
     lives: ["1", "2", "3", "4", "5", "6", "7"],
     totalLives: "5",
-    catagories: ["Animals", "Dog Breeds", "Insects"],
+    catagories: [
+      "Animals",
+      "Dog Breeds",
+      "Insects",
+      "Texting",
+      "Science",
+      "History",
+      "Food",
+      "Capitals",
+      "Countries",
+    ],
     currentCatagory: "Dog Breeds",
   };
 
