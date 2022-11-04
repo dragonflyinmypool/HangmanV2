@@ -2,7 +2,6 @@
   import { createEventDispatcher } from "svelte";
   import SelectButton from "./SelectButton.svelte";
   export let settings;
-  export let newGameButton;
 
   let dispatch = createEventDispatcher();
 
@@ -23,7 +22,7 @@
 </script>
 
 <div id="container">
-  <button on:click={newGame} bind:this={newGameButton}>New Game</button>
+  <button on:click={newGame}>New Game</button>
   <SelectButton
     options={settings.catagories}
     currentOption={settings.currentCatagory}
@@ -35,6 +34,7 @@
     currentOption={settings.totalLives}
     on:change={changeLives}>Lives:</SelectButton
   >
+  <!-- <button on:click={() => dispatch("showHint")}>Show hint</button> -->
 </div>
 
 <style>
@@ -53,5 +53,7 @@
     background-color: var(--purple);
     color: var(--lightBlue);
     border: none;
+    padding: 10px;
+    border-radius: 10px;
   }
 </style>

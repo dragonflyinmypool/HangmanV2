@@ -22,11 +22,12 @@
     border: none;
     border-radius: 5px;
     font-size: 40px;
-    padding: 0.5px;
+    padding: 10px;
     min-width: 100px;
     background-color: var(--purple);
     color: var(--lightBlue);
     text-align: center;
+    border-radius: 10px;
   }
   option {
     background-color: #ffffff29;

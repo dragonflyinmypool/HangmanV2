@@ -3,8 +3,9 @@
   import WordDisplay from "./lib/WordDisplay.svelte";
   import Menu from "./lib/Menu.svelte";
   import LivesDisplay from "./lib/LivesDisplay.svelte";
+  import Hint from "./lib/Hint.svelte";
   import Keyboard from "./lib/Keyboard.svelte";
-  import wordList from "./assets/wordList.json";
+  import newWordList from "./assets/newWordList.json";
 
   // GAME SETUP
   // Current settings
@@ -21,6 +22,9 @@
       "Food",
       "Capitals",
       "Countries",
+      "Famous people",
+      "Childhood memories",
+      "Holdays around the world",
     ],
     currentCatagory: "Dog Breeds",
   };
@@ -34,6 +38,8 @@
     wordTogether: "",
     allLetters: [],
     nextLetter: 0,
+    hint: "",
+    revealHint: false,
   };
 
   // NEW GAME
@@ -41,17 +47,17 @@
     let livesLeft = Number(settings.totalLives);
 
     // Pick the word, and format into arrays
-    let [word, wordTogether] = getRandomWord(settings.currentCatagory);
+    let [word, wordTogether, hint] = getRandomWord(settings.currentCatagory);
 
     let allLetters = [...Array(26)].map((_, i) =>
       String.fromCharCode(i + 97).toUpperCase()
     );
 
     // Reset the game vaible/state
-    state = resetState(livesLeft, word, wordTogether, allLetters);
+    state = resetState(livesLeft, word, wordTogether, allLetters, hint);
   }
 
-  function resetState(livesLeft, word, wordTogether, allLetters) {
+  function resetState(livesLeft, word, wordTogether, allLetters, hint) {
     return {
       // Possible statuses: play, lost, won
       gameStage: "play",
@@ -61,14 +67,18 @@
       pickedLetters: [],
       allLetters: allLetters,
       nextLetter: 0,
+      hint: hint,
+      revealHint: false,
     };
   }
 
   function getRandomWord(catagory) {
     // Go to current catagory word list and get a random word
-    let currentWordList = wordList.words[catagory];
-    let word =
-      currentWordList[Math.floor(Math.random() * currentWordList.length)];
+    console.log(newWordList["words"][catagory]);
+    let currentWordList = newWordList["words"][catagory];
+    let random = Math.floor(Math.random() * currentWordList.length);
+    let word = currentWordList[random]["word"];
+    let hint = "no hint";
     let wordTogether = word.replace(/\s/g, "").toUpperCase();
 
     // Proccess the word (creates an array for each word, and an entry for each letter)
@@ -77,7 +87,7 @@
       .split(" ")
       .map((element) => element.split(""));
 
-    return [word, wordTogether];
+    return [word, wordTogether, hint];
   }
 
   newGame();
@@ -137,6 +147,10 @@
       }
     }
   }
+  function showHint() {
+    state.revealHint = true;
+    console.log(state);
+  }
 </script>
 
 <main>
@@ -153,9 +167,15 @@
       nextLetter={state.nextLetter}
       on:letterClick={letterClick}
     />
-    <LivesDisplay livesLeft={state.livesLeft} status={state.gameStage} />
+    <div>
+      <LivesDisplay livesLeft={state.livesLeft} status={state.gameStage} />
+
+      {#if state.revealHint}
+        <Hint>{state.hint}</Hint>
+      {/if}
+    </div>
   </div>
-  <Menu on:newGame={newGame} {settings} bind:newGameButton />
+  <Menu on:newGame={newGame} {settings} on:showHint={showHint} />
 </main>
 
 <style>

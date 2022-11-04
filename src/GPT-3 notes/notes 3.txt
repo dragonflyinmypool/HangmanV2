@@ -1,0 +1,103 @@
+Generate a list of 100 phrases which can be used in a hangman game. The phrases should contain three words or less and should be based on the topic provided. They should only contain letters and no punctuation.
+Childhood memories:
+
+1. First steps
+2. First words
+3. Crawling
+4. Walking
+5. First haircut
+6. Losing a tooth
+7. Birthdays
+8. Christmas
+9. Easter 
+10. Thanksgiving
+11. New Years Eve
+12. Fourth of July
+13. Getting a pet
+14. Going to school
+15. riding a bike
+16. Skinned knees
+17. Catching fireflies
+18. Making mud pies
+19. Sprinklers
+20. Slip n slide
+21. Swimming pools
+22. Ice cream trucks
+23. The park
+24. The zoo
+25. Roller skating
+26. Sledding
+27. Building a snowman
+28. Hiding Easter eggs
+29. Trick or treating
+30. Decorating pumpkins
+31. Thanksgiving dinner
+32. Christmas lights
+33. Santa Claus
+34. Rudolph the reindeer
+35. Frosty the snowman
+36. Jack o lanterns
+37. Ghosts
+38. Goblins
+39. Witches
+40. Bats
+41. Black cats
+42. Spider webs
+43. Pumpkins
+44. Scarecrows
+45. Falling leaves
+46. Apple picking
+47. Hayrides
+48. Corn mazes
+49. Bonfires
+50. Smores
+51. Roasting marshmallows
+52. Singing Christmas carols
+53. Trick or treating
+54. Halloween parties
+55. Dressing up
+56. Pumpkin patch
+57. Eating Thanksgiving dinner 
+58. Going Christmas caroling
+59. Jumping in puddles
+60. Visiting the zoo
+61. Going on a picnic
+62. Flying a kite
+63. Playing tag
+64. Hide and seek
+65. Building a fort
+66. Catching fireflies
+67. Eating watermelon
+68. Running through sprinklers
+69. Homemade pizzas
+70. Planting a garden
+71. Water balloon fights
+72. Eating ice cream
+73. Having a tea party
+74. Going on a nature hike
+75. Collecting shells
+76. Camping in the backyard
+77. Playing in the rain
+78. Jumping on trampolines
+79. Hiking
+80. Amusement parks
+81. Getting lost
+82. Raking leaves
+83. Playing in the leaves
+84. Making a snowman
+85. Snowball fights
+86. Sledding
+87. Ice skating
+88. Kwanzaa
+89. Going sledding
+90. Drinking hot chocolate
+91. Christmas shopping
+92. Decorating Christmas tree 
+93. Hanukkah
+94. Lighting Hanukkah candles
+95. Eating latkes
+96. Giving presents
+97. Family gatherings
+98. Playing games
+99. Telling stories
+100. Making memories
