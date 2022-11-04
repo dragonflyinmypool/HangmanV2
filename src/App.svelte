@@ -38,8 +38,8 @@
     wordTogether: "",
     allLetters: [],
     nextLetter: 0,
-    hint: "",
-    revealHint: false,
+    description: "",
+    revealDescription: false,
   };
 
   // NEW GAME
@@ -47,17 +47,19 @@
     let livesLeft = Number(settings.totalLives);
 
     // Pick the word, and format into arrays
-    let [word, wordTogether, hint] = getRandomWord(settings.currentCatagory);
+    let [word, wordTogether, description] = getRandomWord(
+      settings.currentCatagory
+    );
 
     let allLetters = [...Array(26)].map((_, i) =>
       String.fromCharCode(i + 97).toUpperCase()
     );
 
     // Reset the game vaible/state
-    state = resetState(livesLeft, word, wordTogether, allLetters, hint);
+    state = resetState(livesLeft, word, wordTogether, allLetters, description);
   }
 
-  function resetState(livesLeft, word, wordTogether, allLetters, hint) {
+  function resetState(livesLeft, word, wordTogether, allLetters, description) {
     return {
       // Possible statuses: play, lost, won
       gameStage: "play",
@@ -67,27 +69,32 @@
       pickedLetters: [],
       allLetters: allLetters,
       nextLetter: 0,
-      hint: hint,
-      revealHint: false,
+      description: description,
+      revealDescription: false,
     };
   }
 
   function getRandomWord(catagory) {
     // Go to current catagory word list and get a random word
-    console.log(newWordList["words"][catagory]);
     let currentWordList = newWordList["words"][catagory];
     let random = Math.floor(Math.random() * currentWordList.length);
     let word = currentWordList[random]["word"];
-    let hint = "no hint";
-    let wordTogether = word.replace(/\s/g, "").toUpperCase();
+    let description = currentWordList[random]["description"].replace(
+      /^\s+/,
+      ""
+    );
+    // Remove the last sentence of the description if it doesn't end with a period using regex
+    description = description.replace(/[^.]*$/, "");
 
+    let wordTogether = word.replace(/\s/g, "").toUpperCase();
+    console.log(description);
     // Proccess the word (creates an array for each word, and an entry for each letter)
     word = word
       .toUpperCase()
       .split(" ")
       .map((element) => element.split(""));
 
-    return [word, wordTogether, hint];
+    return [word, wordTogether, description];
   }
 
   newGame();
@@ -119,9 +126,13 @@
     // Check if game has been won
     let checker = (arr, target) => target.every((v) => arr.includes(v));
 
+    console.log(state.pickedLetters, state.wordTogether.split(""));
+
     if (checker(state.pickedLetters, state.wordTogether.split(""))) {
-      newGameButton.focus();
+      // newGameButton.focus();
       state.gameStage = "won";
+      state.revealDescription = true;
+      console.log(state.gameStage);
     }
   }
   function updateFocus(e) {
@@ -160,19 +171,20 @@
     status={state.gameStage}
   />
   <div class="flex">
-    <Keyboard
-      pickedLetters={state.pickedLetters}
-      status={state.gameStage}
-      allLetters={state.allLetters}
-      nextLetter={state.nextLetter}
-      on:letterClick={letterClick}
-    />
+    {#if state.gameStage === "play"}
+      <Keyboard
+        pickedLetters={state.pickedLetters}
+        status={state.gameStage}
+        allLetters={state.allLetters}
+        nextLetter={state.nextLetter}
+        on:letterClick={letterClick}
+      />
+    {:else}
+      <Hint>{state.description}</Hint>
+    {/if}
+
     <div>
       <LivesDisplay livesLeft={state.livesLeft} status={state.gameStage} />
-
-      {#if state.revealHint}
-        <Hint>{state.hint}</Hint>
-      {/if}
     </div>
   </div>
   <Menu on:newGame={newGame} {settings} on:showHint={showHint} />
@@ -190,7 +202,7 @@
   .flex {
     width: 1700px;
     display: grid;
-    grid-template-columns: 1000px 500px;
+    grid-template-columns: 1000px 700px;
     grid-template-areas: "keyboard hangman";
   }
 </style>

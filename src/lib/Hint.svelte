@@ -8,5 +8,6 @@
     color: var(--yellow);
     border: 5px solid var(--yellow);
     padding: 10px;
+    margin-right: 60px;
   }
 </style>

@@ -3664,452 +3664,119 @@
       }
     ],
     "Texting": [
-      {
-        "word": "AFAIK",
-        "description": "\"AFAIK\" is an abbreviation for \"as far as I know.\" It is often used when you don't want to give a long answer, or when you don't have the time to explain something in detail."
-      },
-      {
-        "word": "WUZUP",
-        "description": "Texting is a way to communicate with someone quickly and easily. When you text, you type a series of letters and numbers using a phone's keyboard."
-      },
-      {
-        "word": "IRL",
-        "description": "Texting is a way to communicate with someone without having to be face-to-face. You can type a message and send it quickly, without having to wait for a response."
-      },
-      {
-        "word": "BFF",
-        "description": "Texting is a way to communicate with your friends and family. When you text, you type short messages that are sent through your phone's wireless connection."
-      },
-      { "word": "MRW", "description": "My heart is racing, I'm so nervous." },
-      {
-        "word": "YNK",
-        "description": "YNK is a texting shorthand for \"you're not going to believe this.\" It is typically used when the speaker has something shocking to share."
-      },
-      {
-        "word": "CSL",
-        "description": "CSL is a texting app that allows users to communicate with each other without having to use voice or text messages. CSL allows users to send and receive messages quickly and easily, without having to worry about the cost of phone minutes."
-      },
-      {
-        "word": "FTL",
-        "description": "\"FTL\" stands for \" Faster Than Light.\" In this mode of communication, you and your partner text each other while simultaneously viewing each other's screens. This allows you to keep track of each other's movements even when you're not in the same room."
-      },
-      {
-        "word": "TTYL",
-        "description": "Texting is a way to communicate with someone by sending short messages through a phone. TTYL stands for \"talk to you later.\""
-      },
-      {
-        "word": "OH",
-        "description": "The text might say \"oh\" when the sender is responding to a message."
-      },
-      {
-        "word": "NSFW",
-        "description": "Texting can be a very casual way to communicate with friends, but it can also be a way to express your feelings in a way that is not appropriate for a public setting. When you are texting, be sure to use appropriate language and avoid any explicit images or"
-      },
-      {
-        "word": "PPL",
-        "description": "Texting is a way to communicate with friends and family without having to speak aloud. When you text, you type a message on your phone and send it to your friends."
-      },
-      {
-        "word": "NAGI",
-        "description": "Nagi is a messaging app that allows users to easily communicate with one another. It is perfect for when you need to quickly send a message without having to type it out."
-      },
-      {
-        "word": "SMH",
-        "description": " Shaking my head in disbeliefWhen someone texts \"SMH\" it means that they are shaking their head in disbelief."
-      },
-      {
-        "word": "IMU",
-        "description": "IMU stands for \"In My Uterus.\" It's a term used to describe when someone is texting and their phone is in their uterus."
-      },
-      {
-        "word": "TLDR",
-        "description": "Texting is a way to communicate with others quickly and easily. When you text, you can type a short message and send it to someone else."
-      },
-      {
-        "word": "POMS",
-        "description": "Poms is a texting shorthand for \"peace out.\" When someone texts \"poms,\" they are saying that they are leaving the conversation or situation and want to end it."
-      },
-      {
-        "word": "ADIH",
-        "description": "The ADIH text messaging service is a way for people to communicate with friends and family without having to use the phone."
-      },
-      {
-        "word": "JK",
-        "description": "JK is a texting shorthand for \"just kidding.\""
-      },
-      {
-        "word": "IDC",
-        "description": "In the text messaging world, IDC stands for \"I don't care.\" It's a common response when someone doesn't want to answer a question or engage in a conversation."
-      },
-      {
-        "word": "BWL",
-        "description": "Texting is a way to communicate with others without having to speak. You can send and receive text messages quickly and easily using your phone's keyboard."
-      },
-      {
-        "word": "IMO",
-        "description": "In my opinion, it's a really cool app."
-      },
-      {
-        "word": "WYWH",
-        "description": "When you text \"WYWH\" to a friend, they will get a notification that you are typing and will be able to read your message as it is being sent."
-      },
-      {
-        "word": "IIRC",
-        "description": "\"I remember that.\" is a common phrase used to indicate that the speaker remembers something."
-      },
-      {
-        "word": "RLRT",
-        "description": "Texting is a way to communicate with someone without having to speak. You can type a message and send it to someone else, or you can see what the other person is typing and respond to them right away."
-      },
-      {
-        "word": "CS",
-        "description": "CS stands for \"texting.\" Texting is a way to communicate with someone by typing messages on a phone."
-      },
-      {
-        "word": "GAHOY",
-        "description": "Texting is a way to communicate with someone without having to speak. When you text, you type a series of characters on your phone and then hit send."
-      },
-      {
-        "word": "TNTL",
-        "description": "Texting is a way to communicate with someone without having to speak. You can type a message and send it quickly to someone else."
-      },
-      {
-        "word": "AFAIR",
-        "description": "Texting is a way to communicate with others without having to speak. It can be used for communication between friends, family, and romantic partners. Texting can be done through a phone or computer."
-      },
-      {
-        "word": "ASAP",
-        "description": "\"ASAP\" is an abbreviation for \"as soon as possible.\" When texting, this phrase is used to communicate a desire to have something done as soon as possible."
-      },
-      {
-        "word": "HIFW",
-        "description": "HIFW stands for \"Hey, I feel weird.\" It's a common phrase used when someone feels uncomfortable or out of place."
-      },
-      {
-        "word": "GOI",
-        "description": "GOI stands for \"Good Ol' I.\" It is a text messaging shorthand that is used to communicate with friends and family. GOI is typically used when sending short, quick messages."
-      },
-      {
-        "word": "WTF",
-        "description": "When someone texts \"WTF,\" they are usually upset or confused."
-      },
-      {
-        "word": "FB",
-        "description": "Texting is a way to communicate with friends and family without having to speak face-to-face. You can send and receive messages quickly and easily using your phone's keyboard."
-      },
-      {
-        "word": "AAMOF",
-        "description": "Texting abbreviations are a way to reduce the amount of text you have to type in a message. \"AAMOF\" stands for \"All About Me.\""
-      },
-      {
-        "word": "YGTR",
-        "description": "\"YGTR\" is a texting shorthand for \"You got the right to remain silent.\" It is commonly used when someone is being questioned by police."
-      },
-      {
-        "word": "TIL",
-        "description": "Texting is a way to communicate with someone without having to speak. You can type a message, and the person you are texting will see it on their phone."
-      },
-      {
-        "word": "LOL",
-        "description": "When someone texts \"LOL\" they are usually laughing out loud."
-      },
-      {
-        "word": "EMBM",
-        "description": "Emmalyn is messaging her friends about her day. She has just finished work and is looking forward to getting home and relaxing with her friends."
-      },
-      {
-        "word": "OMDB",
-        "description": "OmDB is a website that allows users to find movie and TV show ratings and reviews."
-      },
-      {
-        "word": "FIMH",
-        "description": "FIMH is a texting app that allows users to send and receive messages without having to use phone numbers. The app is available on both Android and iOS devices."
-      },
-      {
-        "word": "SRSLY",
-        "description": "Texting with an SRSLY (Seriously) text is a way to communicate that you're really serious about what you're saying. It's often used in situations where you need to be clear and concise, or when you don't have time to say everything in"
-      },
-      {
-        "word": "IANAL",
-        "description": "This text means \"I am not a lawyer.\""
-      },
-      {
-        "word": "FTW",
-        "description": "This text means \"F*** the world\" and is often used as a response to something that someone does not like."
-      },
-      {
-        "word": "TBH",
-        "description": "Texting is a way to communicate with someone without having to speak. When you text, you type a message and then press send."
-      },
-      {
-        "word": "IFYP",
-        "description": "If you're thinking about sending that text, please think again."
-      },
-      {
-        "word": "AFAICT",
-        "description": "Texting is a way to communicate with others by sending short messages through a phone. It is a popular way to stay in touch with friends and family, and it can be a fun way to pass the time."
-      },
-      {
-        "word": "PAW",
-        "description": "Texting is a way to communicate with friends and family without having to speak aloud. When you text, you type a series of letters and numbers using a phone's keyboard."
-      },
-      {
-        "word": "POV",
-        "description": "A young adult is texting someone, and they are looking at their phone while sitting in their chair."
-      },
-      {
-        "word": "KPC",
-        "description": "KPC stands for \"Keyboard Peripheral Coupler.\" It is a small, inexpensive device that allows two keyboards to be connected together so that one person can type on both keyboards at the same time."
-      },
-      {
-        "word": "ILY",
-        "description": "If you're looking for a way to communicate with your friends without having to speak, Texting is the perfect solution. With a few simple taps, you can send a message that will be delivered immediately to your friends' phones."
-      },
-      {
-        "word": "PBB",
-        "description": "PBB stands for \"Please Be Back.\" It's a text message that is used when a person is missing and they hope that the person they are texting will return soon."
-      },
-      {
-        "word": "YMMV",
-        "description": "Texting is a way to communicate with others without having to speak. You can type or say things quickly and easily, and people can read your messages even if they're not near you."
-      },
-      {
-        "word": "SOML",
-        "description": "SOML stands for \"Send On My List.\" It's a way to keep track of the things you want to do and the things you've done. It's like a to-do list, but it's private."
-      },
-      {
-        "word": "JSYK",
-        "description": "JSYK stands for \"Just Send Y'all Kudos.\" It's a text shorthand used when you want to say \"thank you\" to someone without having to type out a full sentence."
-      },
-      {
-        "word": "OC",
-        "description": "Oc is a messaging app that lets you text with your friends without having to pay for phone minutes."
-      },
-      {
-        "word": "OP",
-        "description": "An online dating service for people over the age of 21."
-      },
-      {
-        "word": "TMB",
-        "description": " Texting is a way to communicate with someone without having to be face-to-face. You can text message someone without having to worry about whether or not they're looking at their phone."
-      },
-      {
-        "word": "DAE",
-        "description": "Dae is a texting app that allows users to communicate with others by sending and receiving messages. Dae is perfect for young adults who want to stay connected with friends and family."
-      },
-      {
-        "word": "BUMP",
-        "description": "When you send a BUMP, it means that you want to talk to the person who sent the BUMP."
-      },
-      {
-        "word": "PAH",
-        "description": "When you text \"PAH\" to someone, they will know that you are angry and frustrated."
-      },
-      {
-        "word": "IMHO",
-        "description": "\"IMHO\" stands for \"In My Humble Opinion.\" It is used to communicate a personal opinion, typically one that the speaker feels is more accurate than others."
-      },
-      {
-        "word": "LOL",
-        "description": "Texting is a way to communicate with someone quickly and easily. When you text, you type a series of characters on your phone and hit send."
-      },
-      {
-        "word": "ASL",
-        "description": "Texting is a way to communicate with someone by sending short, quick messages using a keyboard and phone. When you text, you type a letter on your phone and then press the send button."
-      },
-      {
-        "word": "MFW",
-        "description": "Texting is a way to communicate with friends and family without having to speak aloud. When you text, you type a series of letters and numbers that are sent as a message to someone else."
-      },
-      {
-        "word": "LMAO",
-        "description": "When someone laughs out loud, they are said to be \"Laughing My Ass Off.\" This phrase is used as a form of communication to indicate that the person is having a really good time."
-      },
-      {
-        "word": "DWH",
-        "description": "DWH stands for \"Do What He Wants.\" It's a popular phrase used on social media to describe the idea of submitting to one's partner's desires without question."
-      },
-      {
-        "word": "SFW",
-        "description": "Texting is a way to communicate with friends and family without having to speak face-to-face. When you text, you type a message using a phone's keyboard and then press the send button."
-      },
-      {
-        "word": "GRAS",
-        "description": "Graphic Representation of a Smiley Face with the Text \"Good Morning\""
-      },
-      {
-        "word": "RBTL",
-        "description": "Texting is a way to communicate with someone without having to talk on the phone. You can send a quick message, or even a picture, without having to wait for a response."
-      },
-      {
-        "word": "AYOR",
-        "description": "Texting is a way to communicate with friends and family without having to speak aloud. When you text, you type short messages that are sent through your phone's wireless connection."
-      },
-      {
-        "word": "DIY",
-        "description": "Texting is a way to communicate with friends and family without having to talk on the phone. You can type a message and send it quickly, which is perfect for when you don't have time to talk."
-      },
-      {
-        "word": "WTPA",
-        "description": "Texting is a way to communicate with others while you're on the go. You can text message people, send pictures, and even make phone calls."
-      },
-      {
-        "word": "PTB",
-        "description": "Texting is a way to communicate with others while you are busy. You can text while you are walking, driving, or doing other activities."
-      },
-      {
-        "word": "TIA",
-        "description": "This is an abbreviation for \"thank you.\""
-      },
-      {
-        "word": "TIME",
-        "description": "Texting is a way to communicate with others without having to be face-to-face. You can text someone, and they can text you back right away."
-      },
-      {
-        "word": "BSAAW",
-        "description": "Texting is a way to communicate with someone without having to speak. When you text, you type a series of characters on your phone and send it to the person you are texting."
-      },
-      {
-        "word": "DM",
-        "description": "Texting is a way to communicate with someone without having to be face-to-face. You can text message someone, and they can text you back."
-      },
-      {
-        "word": "GMTA",
-        "description": "Gmail, Messenger, and other texting apps are great for staying in touch with friends and family, but they can also be distracting when you're trying to focus on your work. GMTA is a new app that lets you control how much you text and email,"
-      },
-      {
-        "word": "FAWC",
-        "description": "Fawcett Associates is a marketing and advertising firm."
-      },
-      {
-        "word": "BAE",
-        "description": "Texting is a way to communicate with someone without having to speak. You type a message and the person you are texting can read it."
-      },
-      {
-        "word": "FWIW",
-        "description": "This is just a heads up.This means that I'm thinking of you and wanted to let you know."
-      },
-      {
-        "word": "NSFL",
-        "description": "When someone sends you an NSFL (not safe for work) text, it means that the text is not appropriate for work and should not be sent."
-      },
-      {
-        "word": "NBD",
-        "description": "This means \"no big deal\" and is used when something is not a big deal."
-      },
-      {
-        "word": "4AO",
-        "description": "Texting is a way to communicate with someone without having to speak aloud. You can type a message and send it to your friend, or you can talk on the phone and text at the same time."
-      },
-      {
-        "word": "PRT",
-        "description": "PRT stands for \"Personal Response Texting.\" This is a new way to communicate that allows you to type a message and have it sent right to your phone without having to open the app."
-      },
-      {
-        "word": "NTH",
-        "description": "NTH stands for \"No Texting Here.\" This phrase is often used when someone wants to avoid being disturbed by incoming text messages."
-      },
-      {
-        "word": "MSG",
-        "description": "Texting is a way to communicate with others without having to speak. When you text, you type a message and send it to someone through your phone's messaging app."
-      },
-      {
-        "word": "FYI",
-        "description": "Texting is a way to communicate with someone without having to speak. You can type a message and send it quickly to your friend."
-      },
-      {
-        "word": "TFW",
-        "description": "You're texting with a friend and you get a notification that someone has sent you a message. You open the message and it's from your crush! They've just asked you out on a date!"
-      },
-      {
-        "word": "ZZZ",
-        "description": "Texting is a way to communicate with someone without having to speak. When you text, you type a message using a keyboard and then hit send."
-      },
-      {
-        "word": "QQ",
-        "description": "QQ is a messaging app that allows users to communicate with others through text. It is popular among young adults because of its user-friendly interface and the ability to share photos and videos."
-      },
-      { "word": "IMO", "description": "In my opinion, it's a good idea." },
-      {
-        "word": "SSDD",
-        "description": "When someone is feeling really down, they might text \"SSDD\" to their friends to let them know that they're not feeling well."
-      },
-      {
-        "word": "ICYMI",
-        "description": "Texting is a way to communicate quickly and easily with friends and family. When you're texting, you type one letter at a time on your phone's keyboard."
-      },
-      {
-        "word": "JIC",
-        "description": "JIC stands for \"Just In Case.\" When you text JIC, you're letting your friends know that you're always prepared for whatever might happen."
-      },
-      {
-        "word": "IDC",
-        "description": "In the text messaging world, IDC stands for \"I don't care.\" It's a common response to messages that don't require a response."
-      },
-      {
-        "word": "PITR",
-        "description": "PITR is a texting app that allows users to communicate with each other quickly and easily. It is perfect for when you need to send a quick message, and it is also great for group messaging."
-      },
-      {
-        "word": "OMW",
-        "description": "\"OMW\" is an abbreviation for \"On My Way.\" It is often used in text messages to indicate that the sender is on their way."
-      },
-      {
-        "word": "GRATZ",
-        "description": "When you text \"GRATZ\" to someone, you are saying \"Thank you.\""
-      },
-      {
-        "word": "GL",
-        "description": "Gmail is a messaging service that allows users to send and receive emails."
-      },
-      {
-        "word": "IDK",
-        "description": "\"I don't know.\" This is a common response when someone is unsure of what to say."
-      },
-      {
-        "word": "TTYL",
-        "description": "Texting is a way to communicate with someone by typing on a phone. TTYL stands for \"talk to you later.\""
-      },
-      {
-        "word": "BRB",
-        "description": "\"BRB\" stands for \"be right back.\" When someone sends this text, they are usually going to be away from their phone for a short period of time."
-      },
-      {
-        "word": "NFS",
-        "description": "NFS stands for \"No Fear Street Racing.\" It is a popular online racing game where players compete in timed races against other drivers."
-      },
-      {
-        "word": "BBBG",
-        "description": "Texting is a way to communicate with others without having to speak. It is a quick way to send a message, and it can be done anywhere."
-      },
-      {
-        "word": "BBIAS",
-        "description": "Texting is a way to communicate with others without having to speak. It is a quick way to get information, share ideas, and make plans."
-      },
-      {
-        "word": "RUOK",
-        "description": "Texting can be a quick way to communicate with someone, especially if you're busy. When you text, you type a message on your phone and send it to someone else."
-      },
-      {
-        "word": "CYT",
-        "description": "CYT is a texting app that allows users to communicate with others by sending and receiving short messages."
-      },
-      {
-        "word": "DBMIB",
-        "description": "Texting is a way to communicate with others without having to speak. When you text, you type a message on your phone and send it to someone else."
-      },
-      {
-        "word": "DM",
-        "description": "A DM is a type of text message that allows two people to communicate with each other privately."
-      },
-      {
-        "word": "GFN",
-        "description": "Girlfriends' Night Out is a social networking website for women to connect with other women. It provides a forum for women to share ideas, advice, and experiences related to dating, relationships, and sex."
-      },
-      {
-        "word": "AFK",
-        "description": "When someone is \"afk,\" they are not currently using their phone. This can mean that they are away from their phone, in a meeting, or just taking a break."
-      }
+      { "word": "ROFL", "description": "Rolling on the floor laughing." },
+      { "word": "STFU", "description": "Shut the f*** up." },
+      { "word": "ICYMI", "description": "In case you missed it." },
+      { "word": "TLDR", "description": "Too long, didn’t read." },
+      { "word": "TMI", "description": "Too much information." },
+      { "word": "AFAIK", "description": "As far as I know." },
+      { "word": "LMK", "description": "Let me know." },
+      { "word": "NVM", "description": "Nevermind." },
+      { "word": "FTW", "description": "For the win." },
+      { "word": "BYOB", "description": "Bring your own beer." },
+      { "word": "BOGO", "description": "Buy one get one." },
+      { "word": "JK", "description": "Just kidding." },
+      { "word": "JW", "description": "Just wondering." },
+      { "word": "TGIF", "description": "Thank goodness it’s Friday." },
+      { "word": "TBH", "description": "To be honest." },
+      { "word": "TBF", "description": "To be frank." },
+      { "word": "RN", "description": "Right now." },
+      { "word": "FUBAR", "description": "F***** up beyond all recognition." },
+      { "word": "BRB", "description": "Be right back." },
+      { "word": "ISO", "description": "In search of." },
+      { "word": "BRT", "description": "Be right there." },
+      { "word": "BTW", "description": "By the way." },
+      { "word": "FTFY", "description": "Fixed that for you." },
+      { "word": "GG", "description": "Good game." },
+      { "word": "BFD", "description": "Big freaking deal." },
+      { "word": "IRL", "description": "In real life." },
+      { "word": "DAE", "description": "Does anyone else." },
+      { "word": "LOL", "description": "Laugh out loud." },
+      { "word": "SMH", "description": "Shaking my head." },
+      { "word": "NGL", "description": "Not gonna lie." },
+      { "word": "BTS", "description": "Behind the scenes." },
+      { "word": "IKR", "description": "I know right." },
+      { "word": "TTYL", "description": "Talk to you later." },
+      { "word": "HMU", "description": "Hit me up." },
+      { "word": "FWIW", "description": "For what it’s worth." },
+      { "word": "IMO", "description": "In my opinion." },
+      { "word": "WYD", "description": "What are you doing." },
+      { "word": "IMHO", "description": "In my humble opinion." },
+      { "word": "IDK", "description": "I don’t know." },
+      { "word": "IDC", "description": "I don’t care." },
+      { "word": "IDGAF", "description": "I don’t give a f***." },
+      { "word": "NBD", "description": "No big deal." },
+      { "word": "TBA", "description": "To be announced." },
+      { "word": "TBD", "description": "To be decided." },
+      { "word": "AFK", "description": "Away from keyboard." },
+      { "word": "ABT", "description": "About." },
+      { "word": "IYKYK", "description": "If you know you know." },
+      { "word": "BC", "description": "Because." },
+      { "word": "JIC", "description": "Just in case." },
+      { "word": "FOMO", "description": "Fear of missing out." },
+      { "word": "SNAFU", "description": "Situation normal, all f***** up." },
+      { "word": "GTG", "description": "Got to go." },
+      { "word": "LMAO", "description": "Laughing my a** off." },
+      { "word": "IYKWIM", "description": "If you know what I mean." },
+      { "word": "MYOB", "description": "Mind your own business." },
+      { "word": "POV", "description": "Point of view." },
+      { "word": "TLC", "description": "Tender loving care." },
+      { "word": "HBD", "description": "Happy birthday." },
+      { "word": "WE", "description": "Whatever." },
+      { "word": "WTF", "description": "What the f***." },
+      { "word": "WYSIWYG", "description": "What you see is what you get." },
+      { "word": "FWIF", "description": "For what it’s worth." },
+      { "word": "TW", "description": "Trigger warning." },
+      { "word": "EOD", "description": "End of day." },
+      { "word": "FAQ", "description": "Frequently asked question." },
+      { "word": "AKA", "description": "Also known as." },
+      { "word": "ASAP", "description": "As soon as possible." },
+      { "word": "DIY", "description": "Do it yourself." },
+      { "word": "LMGTFY", "description": "Let me Google that for you." },
+      { "word": "NP", "description": "No problem." },
+      { "word": "NA", "description": "Not applicable or not available." },
+      { "word": "OOO", "description": "Out of office." },
+      { "word": "TIA", "description": "Thanks in advance." },
+      { "word": "COB", "description": "Close of business." },
+      { "word": "FYI", "description": "For your information." },
+      { "word": "NSFW", "description": "Not safe for work." },
+      { "word": "WFH", "description": "Work from home." },
+      { "word": "OMW", "description": "On my way." },
+      { "word": "WDYT", "description": "What do you think." },
+      { "word": "WYGAM", "description": "When you get a minute." },
+      { "word": "SMP", "description": "Social media platform." },
+      { "word": "DM", "description": "Direct message." },
+      { "word": "FB", "description": "Facebook." },
+      { "word": "IG", "description": "Instagram." },
+      { "word": "LI", "description": "LinkedIn." },
+      { "word": "YT", "description": "YouTube." },
+      { "word": "FF", "description": "Follow Friday." },
+      { "word": "IM", "description": "Instant message." },
+      { "word": "PM", "description": "Private message." },
+      { "word": "OP", "description": "Original post." },
+      { "word": "QOTD", "description": "Quote of the day." },
+      { "word": "OOTD", "description": "Outfit of the day." },
+      { "word": "RT", "description": "Retweet." },
+      { "word": "TBT", "description": "Throwback Thursday." },
+      { "word": "TIL", "description": "Today I learned." },
+      { "word": "AMA", "description": "Ask me anything." },
+      { "word": "FBF", "description": "Flashback Friday." },
+      { "word": "MFW", "description": "My feeling when." },
+      { "word": "HMU", "description": "Hit me up." },
+      { "word": "ILY", "description": "I love you." },
+      { "word": "MCM", "description": "Man crush Monday." },
+      { "word": "WCW", "description": "Woman crush Wednesday." },
+      { "word": "BF", "description": "Boyfriend." },
+      { "word": "GF", "description": "Girlfriend." },
+      { "word": "BAE", "description": "Before anyone else." },
+      { "word": "LYSM", "description": "Love you so much." },
+      { "word": "PDA", "description": "Public display of affection." },
+      { "word": "LTR", "description": "Longterm relationship." },
+      { "word": "DTR", "description": "Define the relationship." },
+      { "word": "LDR", "description": "Long-distance relationship." },
+      { "word": "XOXO", "description": "Hugs and kisses." },
+      { "word": "OTP", "description": "One true pairing." },
+      { "word": "LOML", "description": "Love of my life." }
     ],
     "Famous people": [
       {
@@ -4158,7 +3825,7 @@
       },
       {
         "word": "Black Elk",
-        "description": " Black Elk was a Native American holy man and spiritual leader. He is best known for his teachings on the Holy Spirit and for his account of his spiritual journey.Maria TallchiefDescription: Maria Tallchief was an American dancer and choreographer. She is considered one"
+        "description": " Black Elk was a Native American holy man and spiritual leader. He is best known for his teachings on the Holy Spirit and for his account of his spiritual journey."
       },
       {
         "word": "Booker T. Washington",
@@ -4266,7 +3933,7 @@
       },
       {
         "word": "John Adams",
-        "description": " John Adams was the second president of the United States. He helped create the Constitution and was a key figure in the American Revolution.George WashingtonDescription: George Washington was the first president of the United States. He led the American Revolution and was a key figure in"
+        "description": " John Adams was the second president of the United States. He helped create the Constitution and was a key figure in the American Revolution."
       },
       {
         "word": "John Brown",
@@ -4290,7 +3957,7 @@
       },
       {
         "word": "John Paul Jones",
-        "description": " John Paul Jones was a famous British naval officer during the American Revolution. He is best known for his role in the Battle of Lexington and the Battle of Bunker Hill.George WashingtonDescription: George Washington was the first president of the United States. He led the American"
+        "description": " John Paul Jones was a famous British naval officer during the American Revolution. He is best known for his role in the Battle of Lexington and the Battle of Bunker Hill."
       },
       {
         "word": "John Quincy Adams",
@@ -4394,7 +4061,7 @@
       },
       {
         "word": "Milton Hershey",
-        "description": " Milton Hershey was an American chocolate manufacturer who founded the Hershey Chocolate Company in 1894. He is best known for his creation of the Hershey Kiss, a chocolate bar with a smooth, creamy center.John LennonDescription: John Winston Lennon was an English"
+        "description": " Milton Hershey was an American chocolate manufacturer who founded the Hershey Chocolate Company in 1894. He is best known for his creation of the Hershey Kiss, a chocolate bar with a smooth, creamy center."
       },
       {
         "word": "Mohandas Gandhi",
@@ -4946,11 +4613,11 @@
       },
       {
         "word": "Christmas",
-        "description": " Celebrate the holiday season with family and friends by spending time together in a festive setting.New Year'sDescription: Ring in the new year with friends and family by celebrating in a fun and festive way."
+        "description": " Celebrate the holiday season with family and friends by spending time together in a festive setting."
       },
       {
         "word": "St Andrews",
-        "description": " A beautiful town in Scotland that is known for its golf courses.BaliDescription: A tropical island paradise with a diverse culture and stunning natural scenery.ParisDescription: A city with a rich history and many attractions, including the Eiffel Tower"
+        "description": " A beautiful town in Scotland that is known for its golf courses."
       },
       {
         "word": "Easter",
@@ -5010,7 +4677,7 @@
       },
       {
         "word": "Purim",
-        "description": " A Jewish holiday that celebrates the deliverance of the Jews from a threatened massacre in ancient Persia.HanukkahDescription: A Jewish holiday that commemorates the rededication of the Second Temple in Jerusalem after it was destroyed by the Babylonians in 586"
+        "description": " A Jewish holiday that celebrates the deliverance of the Jews from a threatened massacre in ancient Persia."
       },
       {
         "word": "May Day",
@@ -5018,11 +4685,11 @@
       },
       {
         "word": "Beltane",
-        "description": " A spring holiday celebrated on May 1st in many parts of the world. It is a time to celebrate fertility and new life.Valentine's DayDescription: A day to celebrate love and affection between people. It is typically celebrated on February 14th in"
+        "description": " A spring holiday celebrated on May 1st in many parts of the world. It is a time to celebrate fertility and new life."
       },
       {
         "word": "Lammas",
-        "description": " A harvest festival celebrated on the first day of the month of September in many cultures.PentecostDescription: A Christian holiday celebrated 50 days after Easter."
+        "description": " A harvest festival celebrated on the first day of the month of September in many cultures.PentecostDescription: A Christian holiday celebrated 50 days after Easter"
       },
       {
         "word": "Samhain",
@@ -5030,7 +4697,7 @@
       },
       {
         "word": "Yule",
-        "description": " A time of year when people celebrate the winter solstice and give gifts to one another.ChristmasDescription: A time of year when people celebrate the birth of Jesus Christ."
+        "description": " A time of year when people celebrate the winter solstice and give gifts to one another.ChristmasDescription: A time of year when people celebrate the birth of Jesus Christ"
       },
       {
         "word": "Groundhog Day",
