@@ -26,7 +26,7 @@
     min-width: 100px;
     background-color: var(--purple);
     color: var(--lightBlue);
-    text-align: center;
+    text-align: left;
     border-radius: 10px;
   }
   option {

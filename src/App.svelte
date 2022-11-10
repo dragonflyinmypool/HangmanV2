@@ -10,7 +10,7 @@
   // GAME SETUP
   // Current settings
   let settings = {
-    lives: ["1", "2", "3", "4", "5", "6", "7"],
+    lives: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
     totalLives: "5",
     catagories: [
       "Animals",
@@ -28,6 +28,8 @@
     ],
     currentCatagory: "Dog Breeds",
   };
+
+  let pickedWords = [];
 
   // State
   let state = {
@@ -79,10 +81,20 @@
     let currentWordList = newWordList["words"][catagory];
     let random = Math.floor(Math.random() * currentWordList.length);
     let word = currentWordList[random]["word"];
+
+    // Keep picking words until we get one that hasn't been picked before
+    while (pickedWords.includes(word)) {
+      let random = Math.floor(Math.random() * currentWordList.length);
+      let word = currentWordList[random]["word"];
+    }
+
+    pickedWords.push(word);
+
     let description = currentWordList[random]["description"].replace(
       /^\s+/,
       ""
     );
+
     // Remove the last sentence of the description if it doesn't end with a period using regex
     description = description.replace(/[^.]*$/, "");
 
@@ -93,6 +105,7 @@
       .toUpperCase()
       .split(" ")
       .map((element) => element.split(""));
+    // add the word to the list of picked words
 
     return [word, wordTogether, description];
   }
